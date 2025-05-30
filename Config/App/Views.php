@@ -4,7 +4,7 @@ class Views{
     public function getView($ruta, $vista, $data="")
     {
         if ($ruta == "home") {
-            $vista = "Views/".$vista.".php";
+            $vista = $vista.".php";
         }else{
             $vista = "Views/".$ruta."/".$vista.".php";
         }
